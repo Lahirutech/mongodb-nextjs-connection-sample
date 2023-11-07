@@ -10,7 +10,7 @@ export async function POST() {
       Post.create({ name: 'postname' }).then((data) => {
         console.log(data);
       });
-    return new NextResponse('Posted');
+    return new NextResponse('Posted model');
   } catch (error) {
     console.log('error from route', error);
     return new NextResponse('Error');
