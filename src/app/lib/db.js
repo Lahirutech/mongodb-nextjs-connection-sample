@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose, { Mongoose } from "mongoose";
 
 global.mongoose = {
   conn: null,
@@ -8,7 +8,7 @@ global.mongoose = {
 export async function dbConnect() {
   try {
     if (global.mongoose && global.mongoose.conn) {
-      console.log('Connected from previous');
+      console.log("Connected from previous");
       return global.mongoose.conn;
     } else {
       const conString = process.env.MONGO_URL;
@@ -22,11 +22,19 @@ export async function dbConnect() {
         promise,
       };
 
-      console.log('Newly connected');
+      console.log("Newly connected");
       return await promise;
     }
   } catch (error) {
-    console.error('Error connecting to the database:', error);
-    throw new Error('Database connection failed');
+    console.error("Error connecting to the database:", error);
+    throw new Error("Database connection failed");
   }
 }
+
+export const disconnect = () => {
+  if (!global.mongoose.conn) {
+    return;
+  }
+  global.mongoose.conn = null;
+  mongoose.disconnect();
+};
