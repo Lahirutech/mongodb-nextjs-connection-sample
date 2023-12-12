@@ -4,7 +4,7 @@ import PostModel from "../../models/PostModel";
 import { NextResponse } from "next/server";
 import mongoose from "mongoose";
 
-export async function GET() {
+export async function POST() {
   console.log("hit get post", new Date().getSeconds());
   try {
     await dbConnect();

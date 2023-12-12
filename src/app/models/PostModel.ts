@@ -6,10 +6,15 @@ const postSchema = new Mongoose.Schema({
     type: String,
     required: true,
   },
+  type: {
+    type: String,
+    required: false,
+  },
 });
 
 interface IPost {
   name: string;
+  type: string;
 }
 
 interface IPostDocument extends IPost, Document {}
