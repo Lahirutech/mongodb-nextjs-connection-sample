@@ -11,7 +11,7 @@ const postSchema = new Mongoose.Schema({
     required: false,
   },
 });
-
+//how our post looks like
 interface IPost {
   name: string;
   type: string;
@@ -19,6 +19,8 @@ interface IPost {
 
 interface IPostDocument extends IPost, Document {}
 interface IPostModel extends Model<IPostDocument> {}
+
+//postSchema->Document->Model
 
 // const PostModel: IPostModel = Mongoose.model<IPostDocument>("post", postSchema);
 
