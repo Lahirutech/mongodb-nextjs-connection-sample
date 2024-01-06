@@ -1,0 +1,37 @@
+:root {
+  @media screen and (max-width: 1736px) {
+    .wrapper {
+      max-width: 1536px;
+    }
+  }
+
+  @media screen and (max-width: 1536px) {
+    .wrapper {
+      max-width: 1336px;
+    }
+  }
+
+  @media screen and (max-width: 1336px) {
+    .wrapper {
+      max-width: 1024px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      max-width: 768px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      max-width: 768px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
