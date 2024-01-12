@@ -7,6 +7,7 @@
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Roboto";
 }
 a {
   color: inherit;
@@ -15,14 +16,13 @@ a {
 
 .container {
   min-height: 100vh;
-  background-color: var(--background);
+  background-color: var(--accent);
 }
 
 .wrapper {
   max-width: 1736px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--accent);
   padding-left: 70px;
   padding-right: 70px;
 }
