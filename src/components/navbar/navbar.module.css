@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  font-size: 18px;
+}
+
+.logo {
+  display: flex;
+  flex: 2;
+}
+.go {
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 8px;
+}
+
+@media screen and (max-width: 1336px) {
+  .container {
+    font-size: 16px;
+  }
+  .links {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .link,
+  .logo {
+    display: none;
+  }
+  .container {
+    justify-content: flex-end;
+  }
+}

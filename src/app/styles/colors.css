@@ -7,7 +7,20 @@
 
   --accent: #ff6f61;
   --accent-hover: #e65a4f;
-  
-  --background: #ffffff;
+
   --text: #333333;
+}
+
+.dark {
+  --mainBackground: #1a1a1a;
+  --mainText: #cfcfcf;
+  --secondaryBackground: #2b2b2b;
+  --secondaryText: #8e8e8e;
+}
+
+.light {
+  --mainBackground: #f8f8f8;
+  --mainText: #333;
+  --secondaryBackground: #e0e0e0;
+  --secondaryText: #757575;
 }
