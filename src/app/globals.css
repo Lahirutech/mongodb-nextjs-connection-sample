@@ -23,6 +23,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--accent);
+
   padding-left: 70px;
   padding-right: 70px;
 }

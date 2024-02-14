@@ -1,0 +1,83 @@
+/* When making the image responsive you can give different 
+height in each breakpoint and make the width 100% so it gets responsive.
+or pass it with the sizes prop  */
+.container {
+  margin-top: 30px;
+  padding: 10px;
+}
+.articleHead {
+  font-size: 96px;
+  font-weight: 300;
+}
+.articleBody {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 50px;
+}
+.articleDesc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.subhead {
+  font-size: 40px;
+}
+.desc {
+  font-size: 20px;
+  font-weight: 300;
+}
+.button {
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+}
+.articleImage {
+  flex: 1;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+.image {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1736px) {
+  .articleHead {
+    font-size: 72px;
+  }
+}
+
+@media screen and (max-width: 1336px) {
+  .articleHead {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .articleHead {
+    font-size: 48px;
+  }
+  .articleBody {
+    flex-direction: column;
+  }
+  .articleImage {
+    height: 450px;
+    flex: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .articleHead {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .articleImage {
+    height: 250px;
+    flex: none;
+  }
+}
