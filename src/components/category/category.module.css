@@ -1,0 +1,31 @@
+.container {
+}
+
+.title {
+  font-size: 60px;
+  margin: 20px 0;
+}
+.categories {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  width: 15%;
+  height: 60px;
+}
+
+.category.fashion {
+  background-color: red;
+}
+
+.caterImage {
+  border-radius: 50%;
+}
