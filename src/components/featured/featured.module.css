@@ -42,6 +42,7 @@ or pass it with the sizes prop  */
 }
 .image {
   object-fit: cover;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1736px) {

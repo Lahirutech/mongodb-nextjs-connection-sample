@@ -4,14 +4,15 @@ import Image from "next/image";
 import headrImg from "@public/assets/images/3d-cartoon-boy-character-model-design-free-photo.jpg";
 
 const Featured = () => {
+
   return (
     <div className={styles.container}>
       <h1 className={styles.articleHead}>
-        Main Heading of th Article Goes here
+        Main Heading of the Article Goes here
       </h1>
       <div className={styles.articleBody}>
         <div className={styles.articleDesc}>
-          <h2 className={styles.subhead}>Sum heading of the article</h2>
+          <h2 className={styles.subhead}>Sub heading of the article</h2>
           <p className={styles.desc}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Repudiandae temporibus voluptatum aut veniam error praesentium nihil
