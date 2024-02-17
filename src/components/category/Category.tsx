@@ -5,61 +5,33 @@ import nature from "@public/assets/images/nature.jpg";
 import Image from "next/image";
 
 export const Category = () => {
-  const categories = [{ id: 1, name: "Articles", bg: "article" }];
+  const categories = [
+    { id: 1, name: "Articles", bg: "article" },
+    { id: 1, name: "Fashion", bg: "fashion" },
+    { id: 1, name: "Technology", bg: "technology" },
+    { id: 1, name: "Science", bg: "science" },
+    { id: 1, name: "Life", bg: "life" },
+  ];
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Categories</h1>
       <div className={styles.categories}>
-        <Link href={""} className={`${styles.category} ${styles.fashion}`}>
-          <Image
-            src={nature}
-            alt=""
-            width={32}
-            height={32}
-            className={styles.caterImage}
-          />
-          Articls
-        </Link>
-        <Link href={""} className={`${styles.category} ${styles.fashion}`}>
-          <Image
-            src={nature}
-            alt=""
-            width={32}
-            height={32}
-            className={styles.caterImage}
-          />
-          Articles
-        </Link>
-        <Link href={""} className={`${styles.category} ${styles.fashion}`}>
-          <Image
-            src={nature}
-            alt=""
-            width={32}
-            height={32}
-            className={styles.caterImage}
-          />
-          Articls
-        </Link>
-        <Link href={""} className={`${styles.category} ${styles.fashion}`}>
-          <Image
-            src={nature}
-            alt=""
-            width={32}
-            height={32}
-            className={styles.caterImage}
-          />
-          Articls
-        </Link>
-        <Link href={""} className={`${styles.category} ${styles.fashion}`}>
-          <Image
-            src={nature}
-            alt=""
-            width={32}
-            height={32}
-            className={styles.caterImage}
-          />
-          Articls
-        </Link>
+        {categories.map((item, key) => (
+          <Link
+            href={""}
+            className={`${styles.category} ${styles[item.bg]}`}
+            key={key}
+          >
+            <Image
+              src={nature}
+              alt=""
+              width={32}
+              height={32}
+              className={styles.caterImage}
+            />
+            {item.name}
+          </Link>
+        ))}
       </div>
     </div>
   );
