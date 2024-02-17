@@ -26,6 +26,19 @@
 .category.fashion {
   background-color: rgb(177, 219, 158);
 }
+.category.article {
+  background-color: rgb(224, 177, 184);
+}
+.category.technology {
+  background-color: rgb(194, 134, 203);
+}
+.category.science {
+  background-color: rgb(162, 158, 235);
+}
+.category.life {
+  background-color: rgb(158, 219, 213);
+}
+
 
 .caterImage {
   border-radius: 50%;
