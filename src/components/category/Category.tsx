@@ -10,7 +10,6 @@ export const Category = () => {
     { id: 1, name: "Fashion", bg: "fashion" },
     { id: 1, name: "Technology", bg: "technology" },
     { id: 1, name: "Science", bg: "science" },
-    { id: 1, name: "Life", bg: "life" },
   ];
   return (
     <div className={styles.container}>
