@@ -21,9 +21,6 @@ export default function AuthSwitch() {
   return (
     <div className={styles.authSwitch}>
       {" "}
-      <Link href="" className={styles.link}>
-        Login
-      </Link>
       <div
         className={`${styles.mobileMenueIcon} ${toggle}`}
         onClick={() => menuClicked()}
