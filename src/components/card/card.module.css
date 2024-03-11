@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.imageContainer {
+  position: relative;
+  flex: 1;
+  height: 300px;
+}
+
+.date {
+  font-weight: 500;
+  color: blueviolet;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 30px;
+}
+
+.desc {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.link {
+  border-bottom: 1px solid blueviolet;
+  width: max-content;
+  padding: 2px 0px;
+}
+
+@media screen and (max-width: 589px) {
+  .imageContainer {
+    display: none;
+  }
+}

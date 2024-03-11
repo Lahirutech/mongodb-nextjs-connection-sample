@@ -20,7 +20,10 @@ export default function Navbar() {
         <Link href="" className={styles.link}>
           About
         </Link>
-        <ThemeToggle/>
+        <Link href="" className={styles.link}>
+          {" "}
+          <ThemeToggle />
+        </Link>
         <AuthSwitch />
       </div>
     </div>
