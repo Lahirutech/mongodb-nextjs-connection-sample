@@ -1,9 +1,9 @@
-/* When making the image responsive you can give different 
-height in each breakpoint and make the width 100% so it gets responsive.
-or pass it with the sizes prop  */
 .container {
   margin-top: 30px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 }
 .articleHead {
   font-size: 96px;
