@@ -1,4 +1,4 @@
-.feature-menu {
+.featureMenu {
   display: flex;
-  flex-direction: row;
+  gap: 50px;
 }

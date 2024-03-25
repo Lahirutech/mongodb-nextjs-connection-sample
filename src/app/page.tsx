@@ -12,7 +12,7 @@ export default function Home() {
       <Featured />
       <Category />
       Recent Hilights
-      <div className="feature-menu">
+      <div className={styles.featureMenu}>
         <Card />
         <Menu />
       </div>
