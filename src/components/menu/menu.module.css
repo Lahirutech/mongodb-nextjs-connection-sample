@@ -1,13 +1,16 @@
-/* Make this Responsive */
 .container {
   flex: 2;
 }
 .itemList {
   margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .item {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -40,6 +43,7 @@
 .category.travel {
   background-color: #ff7857;
 }
+
 .descreption {
   font-size: 17px;
 }
@@ -50,4 +54,33 @@
 }
 .date {
   color: gray;
+}
+
+@media screen and (max-width: 1336px) {
+  .itemList {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .item {
+    /* since there is a 30px gap in the top */
+    width: calc(50% - 15px);
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .itemList {
+    flex-direction: column;
+  }
+  .item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .itemList {
+    gap: 10px;
+  }
 }

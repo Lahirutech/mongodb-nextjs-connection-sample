@@ -1,8 +1,9 @@
+.cardContainer {
+  flex: 5;
+}
 .card {
   display: flex;
-  align-items: center;
   gap: 50px;
-  flex: 5;
 }
 
 .imageContainer {
@@ -36,5 +37,11 @@
 @media screen and (max-width: 589px) {
   .imageContainer {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1336px) {
+  .cardContainer {
+    flex: 1;
   }
 }

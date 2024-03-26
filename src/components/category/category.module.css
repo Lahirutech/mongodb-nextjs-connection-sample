@@ -23,19 +23,19 @@
   height: 50px;
 }
 
-.category.fashion {
+.fashionbg {
   background-color: rgb(177, 219, 158);
 }
-.category.article {
+.articlebg {
   background-color: rgb(224, 177, 184);
 }
-.category.technology {
+.technologybg {
   background-color: rgb(194, 134, 203);
 }
-.category.science {
+.sciencebg {
   background-color: rgb(162, 158, 235);
 }
-.category.life {
+.lifebg {
   background-color: rgb(158, 219, 213);
 }
 
@@ -66,12 +66,18 @@
 
 @media screen and (max-width: 768px) {
   .category {
-    width: 50%;
+    width: 40%;
+  }
+  .categories {
+    gap: 5px;
   }
 }
 
 @media screen and (max-width: 430px) {
   .category {
     width: 100%;
+  }
+  .categories {
+    gap: 10px;
   }
 }

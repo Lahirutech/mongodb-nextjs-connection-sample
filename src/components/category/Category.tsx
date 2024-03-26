@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export const Category = () => {
   const categories = [
-    { id: 1, name: "Articles", bg: "article" },
-    { id: 1, name: "Fashion", bg: "fashion" },
-    { id: 1, name: "Technology", bg: "technology" },
-    { id: 1, name: "Science", bg: "science" },
+    { id: 1, name: "Articles", bg: "articlebg" },
+    { id: 1, name: "Fashion", bg: "fashionbg" },
+    { id: 1, name: "Technology", bg: "technologybg" },
+    { id: 1, name: "Science", bg: "sciencebg" },
   ];
   return (
     <div className={styles.container}>
